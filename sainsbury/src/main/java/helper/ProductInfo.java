@@ -1,6 +1,8 @@
 package helper;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 
 public class ProductInfo {
     private String title;
@@ -31,7 +33,7 @@ public class ProductInfo {
         String price;
         price = unit_price.replace("£", "");
         price = price.replace("/unit", "");
-        return new BigDecimal(price);
+        return new BigDecimal(price).round(new MathContext(3, RoundingMode.HALF_UP));
     }
 
     public String getDescription() {

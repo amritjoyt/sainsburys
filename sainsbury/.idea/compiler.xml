@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="sainsbury" />
+        <module name="scraper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="sainsbury" target="1.5" />
+      <module name="scraper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
